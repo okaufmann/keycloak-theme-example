@@ -5,13 +5,10 @@ export default defineConfig({
     rollupOptions: {
       input: [
         'src/index.ts',
-        'src/data/recoveryCodes.ts',
-        'src/data/webAuthnAuthenticate.ts',
-        'src/data/webAuthnRegister.ts',
       ],
       output: {
         assetFileNames: '[name][extname]',
-        dir: 'theme/keywind/login/resources/dist',
+        dir: 'theme/mighty-code/login/resources/dist_sub',
         entryFileNames: '[name].js',
       },
     },

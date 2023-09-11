@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    keycloak:
+        image: quay.io/keycloak/keycloak:22.0
+        command: start-dev --spi-theme-static-max-age=-1 --spi-theme-cache-themes=false --spi-theme-cache-templates=false
+        volumes:
+            # - ./themes/keywind/theme/keywind/:/opt/keycloak/themes/keywind
+            # - ./themes/mighty-code/theme/mighty-code/:/opt/keycloak/themes/mighty-code
+            - ./themes/keywind/out/keywind.jar:/opt/keycloak/providers/keywind.jar
+            - ./themes/mighty-code/out/mighty-code.jar:/opt/keycloak/providers/mighty-code.jar
+            - ./data/:/opt/keycloak/data
+        ports:
+            - '8082:8080'
+        environment:
+            - KEYCLOAK_ADMIN=admin
+            - KEYCLOAK_ADMIN_PASSWORD=admin

@@ -1,0 +1,42 @@
+.pf-c-page__header {
+  background: #00011a;
+}
+
+#brandLink {
+  display: flex;
+}
+
+#spinner_screen {
+  background: #00011a;
+}
+
+#spinner_screen div div {
+  background: #00011a;
+}
+
+#spinner_screen div div svg {
+  background: #00011a !important;
+}
+
+#spinner_screen div p {
+  color: #f7f9fb;
+}
+
+#signOutButton {
+  color: #00011a;
+}
+
+.pf-c-button.pf-m-secondary {
+  color: #00011a;
+  border-color: #00011a;
+  --pf-c-button--after--BorderColor: #00011a;
+}
+
+
+.pf-m-secondary {
+  color: #00011a;
+}
+
+.pf-c-form-control {
+  border-radius: 5px;
+}
